@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "338c2727-278c-49c7-a01e-c5577be3011b",
+		"name": "FM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Devinder Prasad",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "devinder.tu@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "99@11@12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"signup"
+					]
+				},
+				"description": "Signup by user"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/auth",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "devinder.tu@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "99@11@12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"auth"
+					]
+				},
+				"description": "Login user via Token"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "devinder.tu@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "99@11@11",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				},
+				"description": "demo testing for auth"
+			},
+			"response": []
+		},
+		{
+			"name": "POST LOgout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:5000/api/v1/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"logout"
+					]
+				},
+				"description": "Logout User"
+			},
+			"response": []
+		}
+	]
+}

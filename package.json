@@ -1,0 +1,45 @@
+{
+  "name": "fm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index --exec babel-node",
+    "inspect": "nodemon --inspect src/index --exec babel-node",
+    "start-b": "node dist/index ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "bcryptjs": "^2.4.3",
+    "bell": "^9.3.1",
+    "boom": "^7.2.0",
+    "csv-parser": "^2.0.0",
+    "hapi": "^17.5.4",
+    "hapi-auth-cookie": "^9.0.0",
+    "hapi-cron": "^1.0.4",
+    "hapi-good-winston": "^2.0.1",
+    "inert": "^5.1.0",
+    "joi": "^13.6.0",
+    "joi-error-formatter": "^0.5.3",
+    "jsonwebtoken": "^8.3.0",
+    "moment-timezone": "^0.5.21",
+    "mongoose": "^5.2.13",
+    "npm": "^6.4.1",
+    "otp-generator": "^1.1.0",
+    "react-datepicker": "^1.7.0",
+    "shortid": "^2.2.13",
+    "wreck": "^14.1.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "dotenv": "^6.0.0"
+  }
+}
